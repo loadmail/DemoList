@@ -1,0 +1,3 @@
+include ':demoList', ':xjavademo', ':baidumapDemo', ':apphandlerdemo', ':testjsui', ':CaiPiao', ':uploadimage', ':parcelabledemo', ':winxin_ui', ':GpsProvider', ':RecyclerVeiw', ':gallary_lib_circleindicator', ':gallary_lib_PhotoPicker-Packages', ':GallerySelect', ':gallary_lib_PhotoPicker', ':WechatBar'
+
+include ':magneticSensorDemo'

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+    <meta http-equiv="Content-Type" context="text/html;charset=UTF-8">
+    <title>HTML UI FOR Andoid</title>
+    <script type="text/javascript">
+/**此方法是提供给java代码调用的，和其他的js方法没有什么不同，就像我们在web开发下用js动态生成table一样**/
+function show(datas){
+var jsonobjs=eval(datas);
+var table=document.getElementById("table");
+for(var i=0;i<jsonobjs.length;i++){
+    var tr=table.insertRow(table.rows.length);
+    var td=tr.insertCell(0);
+    var td2=tr.insertCell(1);
+    td2.align="right";
+    var td3=tr.insertCell(2);
+    td3.align="center";
+    td.innerHTML=jsonobjs[i].id;
+    td2.innerHTML=jsonobjs[i].name;
+    td3.innerHTML=jsonobjs[i].phone;
+}
+}
+</script>
+</head>
+<!--此Android为我们自己定义的js 对象，对应我们从Activity传递过来的js
+自定义对象-->
+<body onload="javascript:Android.showcontacts()">
+<table border="1" width="100%" id="table" cellspacing="1">
+    <tr>
+        <td width="35%">姓名</td>
+        <td width="30%">工号</td>
+        <td width="35%">电话</td>
+    </tr>
+</table>
+<a href="javascript:window.location.reload()">刷新</a>
+</body>

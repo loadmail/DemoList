@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/threeDLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.example.li.demo.view.threeDView.ThreeDLayout
+            android:id="@+id/td_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="30℃"
+                android:textColor="#fff"
+                android:textSize="80sp" />
+
+
+        </com.example.li.demo.view.threeDView.ThreeDLayout>
+
+        <com.example.li.demo.view.threeDView.ThreeDLayout
+            android:layout_gravity="center"
+            android:id="@+id/td_avatar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000">
+
+            <com.example.li.demo.view.threeDView.CircleImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/avatar" />
+
+        </com.example.li.demo.view.threeDView.ThreeDLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:text="START" />
+
+    </LinearLayout>
+</LinearLayout>
