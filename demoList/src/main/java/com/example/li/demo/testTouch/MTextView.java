@@ -6,7 +6,6 @@ import android.util.Log;
 import android.view.MotionEvent;
 import android.widget.TextView;
 
-import com.example.li.demo.AnnoCallback;
 import com.example.li.demo.MainActivity;
 
 /**

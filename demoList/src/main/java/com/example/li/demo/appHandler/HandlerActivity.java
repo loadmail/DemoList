@@ -18,5 +18,6 @@ public class HandlerActivity extends AppCompatActivity {
         msg.arg1 = 1;
         msg.what = 2;
         handler.handleMessage(msg);
+
     }
 }

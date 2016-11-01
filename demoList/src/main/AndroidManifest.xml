@@ -42,7 +42,8 @@
         <activity android:name=".view.RecyclerIndicatorView.MoreTabActivity" />
         <activity android:name=".view.RecyclerIndicatorView.BannerActivity" />
         <activity android:name=".tab.MoreTab2Activity" />
-        <activity android:name=".tab.TabMainActivity"></activity>
+        <activity android:name=".tab.TabMainActivity" />
+        <activity android:name=".MultiLevel.MultiLevelActivity"></activity>
     </application>
 
 </manifest>

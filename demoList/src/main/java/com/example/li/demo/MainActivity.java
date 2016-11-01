@@ -13,6 +13,7 @@ import android.widget.TextView;
 import com.example.li.demo.CatchExceptionTest.CatchExceptionLogActivity;
 import com.example.li.demo.CheckBoxTest.SingleCheckActivity;
 import com.example.li.demo.GlideTest.GlideActivity;
+import com.example.li.demo.MultiLevel.MultiLevelActivity;
 import com.example.li.demo.RecyclerViewDemo.CardLayoutManager.CardLayoutActivity;
 import com.example.li.demo.RecyclerViewDemo.RecyclerViewActivity;
 import com.example.li.demo.tab.TabMainActivity;
@@ -41,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
             new DemoInfo("CardLayoutActivity", "菱形", CardLayoutActivity.class),
             new DemoInfo("ScrollTopActivity", "滚动头条", ScrollTopActivity.class),
             new DemoInfo("TabMainActivity", "tabView", TabMainActivity.class),
+            new DemoInfo("MultiLevelActivity", "多层级的列表", MultiLevelActivity.class),
     };
 
     @Override
