@@ -25,7 +25,7 @@ public class ComAdapterAty extends Activity {
         ListView listView = (ListView) findViewById(R.id.list);
 
         beanList = new ArrayList<ArticleBean>();
-        for(int i=1;i<10;i++){
+        for(int i=1;i<10000;i++){
             ArticleBean bean = new ArticleBean("文章"+i,"内容"+i+":周三早上丢失了红色钱包，在食堂二楼","2016060"+i,"1718013691"+i);
             beanList.add(bean);
         }

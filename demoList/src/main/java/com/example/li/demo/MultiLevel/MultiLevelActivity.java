@@ -32,27 +32,29 @@ public class MultiLevelActivity extends AppCompatActivity {
     }
 
     private void initData() {
+        final int GROUP_SIZE = 10;
         multiTypes = new ArrayList<>();
 
 
-        for (int k = 0; k < 10; k++) {
-            List<OrderGoods> goodsList = new ArrayList<>();
+        for (int k = 0; k < GROUP_SIZE; k++) {
+            List<Goods> eachList = new ArrayList<>();
 
             for (int i = 0; i < k + 1; i++) {
-                OrderGoods orderGood = new OrderGoods();
-                orderGood.setGoodName("商品" + i);
-                orderGood.setGoodSn("商品SN" + i);
-                goodsList.add(orderGood);
+                Goods goods = new Goods();
+                goods.setGoodName("商品" + i);
+                goods.setGoodSn("商品SN" + i);
+                eachList.add(goods);
             }
             TopMultiType top = new TopMultiType(k);
             multiTypes.add(top);
 
-            for (int j = 0; j < goodsList.size(); j++) {
-                OrderGoods goods = new OrderGoods();
-                goods.setGoodName(goodsList.get(j).getGoodName());
-                goods.setGoodSn(goodsList.get(j).getGoodSn());
-
+            for (int j = 0; j < eachList.size(); j++) {
+                Goods goods = new Goods();
                 //需要的数据直接传
+                goods.setGoodName(eachList.get(j).getGoodName());
+                goods.setGoodSn(eachList.get(j).getGoodSn());
+
+
                 MiddleMultiType middle = new MiddleMultiType(goods);
                 multiTypes.add(middle);
             }

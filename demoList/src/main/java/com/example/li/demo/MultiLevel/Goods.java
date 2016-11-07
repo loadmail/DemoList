@@ -5,7 +5,7 @@ package com.example.li.demo.MultiLevel;
  * 作者：fly on 2016/8/24 0024 23:47
  * 邮箱：cugb_feiyang@163.com
  */
-public class OrderGoods {
+public class Goods {
 
     private String goodName;
     private String goodSn;

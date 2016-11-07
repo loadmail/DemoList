@@ -3,8 +3,9 @@ package com.example.li.demo.MultiLevel.type;
 import android.content.Context;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
-import com.example.li.demo.MultiLevel.OrderGoods;
+import com.example.li.demo.MultiLevel.Goods;
 import com.example.li.demo.R;
 
 import java.util.ArrayList;
@@ -16,10 +17,10 @@ import java.util.List;
 
 public class MiddleMultiType implements MultiType {
 
-    private List<OrderGoods> list;
-    private OrderGoods orderGoods;
+    private List<Goods> list;
+    private Goods orderGoods;
 
-    public MiddleMultiType(OrderGoods orderGoods) {
+    public MiddleMultiType(Goods orderGoods) {
         this.orderGoods = orderGoods;
         list = new ArrayList<>();
         list.add(orderGoods);
@@ -39,8 +40,20 @@ public class MiddleMultiType implements MultiType {
         convertView = View.inflate(mContext,getLayout(),null);
         TextView nameTv = (TextView) convertView.findViewById(R.id.good_name);
         nameTv.setText(orderGoods.getGoodName());
+        nameTv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(mContext, orderGoods.getGoodName(), Toast.LENGTH_SHORT).show();
+            }
+        });
         TextView snTv = (TextView) convertView.findViewById(R.id.good_sn);
         snTv.setText(orderGoods.getGoodSn());
+        snTv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(mContext, orderGoods.getGoodSn(), Toast.LENGTH_SHORT).show();
+            }
+        });
         return convertView;
     }
 }

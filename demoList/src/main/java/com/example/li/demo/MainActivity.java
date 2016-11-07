@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
@@ -51,12 +50,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         listView = (ListViewForScroll) findViewById(R.id.list);
         listView.setAdapter(new DemoListAdapter());
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                onListItemClick(position);
-            }
-        });
+        listView.setOnItemClickListener((parent, view, position, id) -> onListItemClick(position));
     }
 
     private void onListItemClick(int position) {
