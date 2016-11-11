@@ -29,6 +29,11 @@ public class HandlerApp extends Application {
     }
     public void setHandler(Handler mHandler) {
         this.mHandler = mHandler;
+        Message msg = Message.obtain();
+        msg.what = 1;
+        mHandler.sendMessage(msg);
+
+        //最终调用queue.enqueueMessage(msg, uptimeMillis);
     }
 
     @Override
