@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         p.map.put("yes", "ido");
         p.name="ok";
         intent.putExtra("yes", p);
-        intent.setClass(this, MainActivity.class);
+        intent.setClass(this, Main2Activity.class);
         startActivity(intent);
     }
 }

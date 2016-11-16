@@ -11,9 +11,9 @@ import android.widget.TextView;
 import com.example.li.demo.R;
 
 
-public class MyGridView extends GridView {
+public class PopGridView extends GridView {
 	private PopupWindow pop;
-	private TextView ball;
+	private TextView  ball;
 
 	private OnActionUpListener onActionUpListener;
 
@@ -21,7 +21,7 @@ public class MyGridView extends GridView {
 		this.onActionUpListener = onActionUpListener;
 	}
 
-	public MyGridView(Context context, AttributeSet attrs) {
+	public PopGridView(Context context, AttributeSet attrs) {
 		super(context, attrs);
 		// ①手指按下
 		// 显示放大的号码

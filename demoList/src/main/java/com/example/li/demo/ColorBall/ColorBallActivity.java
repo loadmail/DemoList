@@ -26,7 +26,7 @@ public class ColorBallActivity extends AppCompatActivity implements View.OnClick
     private Button randomBlue;
     private TextView change;
     // 选号容器
-    private MyGridView redContainer;
+    private PopGridView redContainer;
     private GridView blueContainer;
 
     private PoolAdapter redAdapter;
@@ -45,7 +45,7 @@ public class ColorBallActivity extends AppCompatActivity implements View.OnClick
 
         context = this;
 
-        redContainer = (MyGridView) findViewById(R.id.ii_ssq_red_number_container);
+        redContainer = (PopGridView) findViewById(R.id.ii_ssq_red_number_container);
         blueContainer = (GridView) findViewById(R.id.ii_ssq_blue_number_container);
         randomRed = (Button) findViewById(R.id.ii_ssq_random_red);
         randomBlue = (Button) findViewById(R.id.ii_ssq_random_blue);
@@ -68,7 +68,7 @@ public class ColorBallActivity extends AppCompatActivity implements View.OnClick
     public void setListener() {
         randomRed.setOnClickListener(this);
         randomBlue.setOnClickListener(this);
-        redContainer.setOnActionUpListener(new MyGridView.OnActionUpListener() {
+        redContainer.setOnActionUpListener(new PopGridView.OnActionUpListener() {
 
             @Override
             public void onActionUp(View view, int position) {

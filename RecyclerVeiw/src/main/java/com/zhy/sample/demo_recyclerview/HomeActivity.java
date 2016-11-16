@@ -1,11 +1,8 @@
 package com.zhy.sample.demo_recyclerview;
 
-import java.util.ArrayList;
-import java.util.List;
-
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
@@ -18,7 +15,10 @@ import android.widget.Toast;
 
 import com.zhy.sample.demo_recyclerview.HomeAdapter.OnItemClickLitener;
 
-public class HomeActivity extends ActionBarActivity
+import java.util.ArrayList;
+import java.util.List;
+
+public class HomeActivity extends Activity
 {
 
 	private RecyclerView mRecyclerView;
