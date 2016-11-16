@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 import com.example.li.demo.CatchExceptionTest.CatchExceptionLogActivity;
 import com.example.li.demo.CheckBoxTest.SingleCheckActivity;
+import com.example.li.demo.ColorBall.ColorBallActivity;
 import com.example.li.demo.GlideTest.GlideActivity;
 import com.example.li.demo.MultiLevel.MultiLevelActivity;
 import com.example.li.demo.RecyclerViewDemo.CardLayoutManager.CardLayoutActivity;
@@ -42,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
             new DemoInfo("ScrollTopActivity", "滚动头条", ScrollTopActivity.class),
             new DemoInfo("TabMainActivity", "tabView", TabMainActivity.class),
             new DemoInfo("MultiLevelActivity", "多层级的列表", MultiLevelActivity.class),
+            new DemoInfo("ColorBallActivity", "选择双色球", ColorBallActivity.class),
     };
 
     @Override
