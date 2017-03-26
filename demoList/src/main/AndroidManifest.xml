@@ -44,7 +44,8 @@
         <activity android:name=".tab.MoreTab2Activity" />
         <activity android:name=".tab.TabMainActivity" />
         <activity android:name=".MultiLevel.MultiLevelActivity" />
-        <activity android:name=".ColorBall.ColorBallActivity"></activity>
+        <activity android:name=".ColorBall.ColorBallActivity" />
+        <activity android:name=".qqDemo.QQActivity"></activity>
     </application>
 
 </manifest>

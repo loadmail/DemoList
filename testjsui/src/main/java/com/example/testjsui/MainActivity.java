@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
         @JavascriptInterface
         public void showcontacts() {
 
-            List<Contacts> contactses = mContactsService.getContactsImf();
+            List<Contacts> contactses = mContactsService.getContactsImf();//提供数据
             JSONArray jsonArray = new JSONArray();
             try {
                 for (Contacts contact : contactses) {

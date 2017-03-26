@@ -16,6 +16,7 @@ import com.example.li.demo.GlideTest.GlideActivity;
 import com.example.li.demo.MultiLevel.MultiLevelActivity;
 import com.example.li.demo.RecyclerViewDemo.CardLayoutManager.CardLayoutActivity;
 import com.example.li.demo.RecyclerViewDemo.RecyclerViewActivity;
+import com.example.li.demo.qqDemo.QQActivity;
 import com.example.li.demo.tab.TabMainActivity;
 import com.example.li.demo.testComAdapter.ComAdapterAty;
 import com.example.li.demo.testThreadpool.ThreadPoolActivity;
@@ -44,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
             new DemoInfo("TabMainActivity", "tabView", TabMainActivity.class),
             new DemoInfo("MultiLevelActivity", "多层级的列表", MultiLevelActivity.class),
             new DemoInfo("ColorBallActivity", "选择双色球", ColorBallActivity.class),
+            new DemoInfo("QQActivity", "qq效果", QQActivity.class),
     };
 
     @Override

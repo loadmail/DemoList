@@ -4,7 +4,10 @@
     <title>HTML UI FOR Andoid</title>
     <script type="text/javascript">
 /**此方法是提供给java代码调用的，和其他的js方法没有什么不同，就像我们在web开发下用js动态生成table一样**/
+
+
 function show(datas){
+
 var jsonobjs=eval(datas);
 var table=document.getElementById("table");
 for(var i=0;i<jsonobjs.length;i++){
